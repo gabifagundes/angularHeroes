@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col s12 m6 l6" *ngIf="hero">
+    <h2>{{ hero.name | uppercase }} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name">
+      </label>
+    </div>
+    {{ recebeFamilia }}
+    <div *ngFor = "let filho of recebeFamilia">
+      <span>kkkkkkkk {{ filho.nome }}</span>
+    </div>
+  </div>
+</div>
+

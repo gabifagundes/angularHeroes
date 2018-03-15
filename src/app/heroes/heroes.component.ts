@@ -11,11 +11,27 @@ export class HeroesComponent implements OnInit {
   
   heroes = HEROES;
   selectedHero;
+  familia: Object[];
 
   constructor() {
+    this.familia = [
+      {
+        nome: 'Vitor',
+        sobreNome: 'Borges'
+      },
+      {
+        nome: 'Emerson',
+        sobreNome: 'Daniel'
+      },
+      {
+        nome: 'Thiago',
+        sobreNome: 'Contre!'
+      }
+    ];
   }
 
   ngOnInit() {
+    console.log(this.familia)
   }
 
   onSelect(hero: Hero): void {
